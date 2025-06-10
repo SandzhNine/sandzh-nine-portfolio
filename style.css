@@ -1,0 +1,130 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 30px 0;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #a8a29e;
+    font-size: 1.2rem;
+}
+
+section {
+    padding: 60px 0;
+    border-bottom: 1px solid #222;
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+section h2 {
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 12px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ddd;
+    text-decoration: none;
+}
+
+/* My Services Section */
+.grid {
+    display: grid;
+    gap: 30px;
+}
+
+.grid > div {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #222;
+    border-radius: 8px;
+}
+
+.grid > div h3 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+/* Skills Section */
+.relative.pt-1 {
+    margin-bottom: 30px;
+}
+
+/* My Project Work Section */
+.grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+/* My Gear Section */
+.block {
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* Contact Me Section */
+.mt-4 a {
+    margin-right: 15px;
+    font-size: 1.4rem;
+}
+
+/* Progress Bar Styles */
+.overflow-hidden {
+    border-radius: 6px;
+}
+
+.bg-gray-800 {
+    background-color: #1a1a1a;
+}
+
+.bg-blue-500 {
+    background-color: #3498db;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .grid-cols-1 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid-cols-1 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
